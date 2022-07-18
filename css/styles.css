@@ -170,15 +170,18 @@ ul {
 .order-button:focus {
   background-color: #188ce8;
 }
+
 .bg-image-order {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 
   background-repeat: no-repeat;
-  background-image: url(/images/background.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(/images/background.jpg);
   background-position: center;
 }
+
 /*benefits section*/
 .visually-hidden {
   position: absolute;
@@ -219,12 +222,12 @@ ul {
   gap: 30px;
 }
 .benefits-icon {
-   width: 270px;
-   height: 120px;
-   background: #F5F4FA;
-   border-radius: 4px;
-   padding: 25px 100px;
-   margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
 }
 /*hero section*/
 
@@ -387,6 +390,27 @@ ul {
   background-color: var(--accent-text-color);
 }
 
+/*clients section*/
+.clients-list {
+  margin-top: 30px;
+  gap: 30px;
+}
+.clients-icon {
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+
+  background-color: #ffffff;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+}
+.clients-icon:hover,
+.clients-icon:focus {
+  border: 1px solid #2196f3;
+  fill: #2196f3;
+}
+
 /*footer*/
 .footer-bg {
   padding-top: 60px;
@@ -432,4 +456,43 @@ ul {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+}
+
+
+.foot-title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.social-list-foot {
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.social-link-foot {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 10%);
+  border-radius: 50%;
+}
+.social-item-foot {
+}
+.social-link-foot:hover,
+.social-link-foot:focus {
+  background-color: #2196f3;
+}
+.social-link-foot:hover .social-icon-foot,
+.social-link-foot:focus .social-icon-foot {
+  fill: #ffffff;
+}
+.social-icon-foot {
+  fill: #ffffff;
 }
