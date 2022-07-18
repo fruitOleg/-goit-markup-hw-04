@@ -170,6 +170,15 @@ ul {
 .order-button:focus {
   background-color: #188ce8;
 }
+.bg-image-order {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-repeat: no-repeat;
+  background-image: url(/images/background.jpg);
+  background-position: center;
+}
 /*benefits section*/
 .visually-hidden {
   position: absolute;
@@ -209,7 +218,14 @@ ul {
   list-style: none;
   gap: 30px;
 }
-
+.benefits-icon {
+   width: 270px;
+   height: 120px;
+   background: #F5F4FA;
+   border-radius: 4px;
+   padding: 25px 100px;
+   margin-bottom: 30px;
+}
 /*hero section*/
 
 .hero-bg {
@@ -255,7 +271,6 @@ ul {
   gap: 10px;
 }
 .social-item {
-
 }
 .social-link {
   align-items: center;
@@ -266,19 +281,17 @@ ul {
   background-color: #ffffff;
   border-radius: 50%;
 }
-.social-icon{
-   fill: #AFB1B8;
+.social-icon {
+  fill: #afb1b8;
 }
 .social-link:hover,
-.social-link:focus{
-   background-color: #2196F3;
-
+.social-link:focus {
+  background-color: #2196f3;
 }
 .social-link:hover .social-icon,
-.social-link:focus .social-icon{
-   fill: #ffffff;
+.social-link:focus .social-icon {
+  fill: #ffffff;
 }
-
 
 /*portfolio*/
 
