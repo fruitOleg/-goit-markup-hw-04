@@ -132,11 +132,11 @@ ul {
   color: var(--accent-text-color);
 }
 .contacts-icon {
-  fill: #757575;
+  fill: currentColor;
   margin-right: 10px;
 }
-.contacts-nav:hover .contacts-icon,
-.contacts-nav:focus .contacts-icon {
+.contacts-icon:hover,
+.contacts-icon:focus {
   fill: var(--accent-text-color);
 }
 
