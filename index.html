@@ -34,11 +34,17 @@
         </ul>
       </nav>
       <ul class="list flex contacts">
-        <li>
-          <a href="mailto:info@devstudio.com" class="contacts-nav">info@devstudio.com</a>
+        <li class="contacts-item">
+          <a class="contacts-nav" href="mailto:info@devstudio.com" > 
+            <svg class="contacts-icon" width="16" height="12"> 
+               <use href="./images/icons.svg#icon-mail"></use>
+            </svg>info@devstudio.com</a>
         </li>
-         <li>
-            <a href="tel:+380961111111" class="contacts-nav">+38 096 111 11 11</a>
+         <li class="contacts-item">
+            <a class="contacts-nav" href="tel:+380961111111" > 
+            <svg class="contacts-icon" width="10" height="16"> 
+               <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>+38 096 111 11 11</a>
          </li>
       </ul>
     </header>
@@ -411,7 +417,7 @@
     </main>
 
     <footer class="footer-bg">
-      <div class="container">
+      <div class="container flex blocks">
       <div>
       <a href="index.html" lang="en" class="logo-foot"
         >Web<span class="logo-foot-accent">Studio</span></a
@@ -431,9 +437,9 @@
         </ul>
       </address>
       </div>
-      </div>
+ 
 
-      <div>
+      <div  class="foot-rigth-block">
          <h3 class="foot-title">присоединяйтесь</h3>
          <ul class="list flex social-list-foot">
                <li class="social-item">
@@ -489,6 +495,7 @@
                   </a>
                </li>
             </ul>
+      </div>
       </div>
     </footer>
   </body>

@@ -108,10 +108,17 @@ ul {
   color: var(--accent-text-color);
 }
 .contacts {
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
   gap: 50px;
 }
+.contacts-item {
+  display: flex;
+  justify-content: center;
+}
 .contacts-nav {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -119,11 +126,18 @@ ul {
   text-decoration: none;
   color: #757575;
 }
-.contacts-nav:hover {
-  color: var(--accent-text-color);
-}
+
+.contacts-nav:hover,
 .contacts-nav:focus {
   color: var(--accent-text-color);
+}
+.contacts-icon {
+  fill: #757575;
+  margin-right: 10px;
+}
+.contacts-nav:hover .contacts-icon,
+.contacts-nav:focus .contacts-icon {
+  fill: var(--accent-text-color);
 }
 
 /*index html*/
@@ -358,6 +372,11 @@ ul {
   cursor: pointer;
   text-decoration: none;
 }
+.hero-card:hover,
+.hero-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .text-card {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -381,13 +400,12 @@ ul {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.nav-butons:hover {
-  color: #ffffff;
-  background-color: var(--accent-text-color);
-}
+.nav-butons:hover,
 .nav-butons:focus {
   color: #ffffff;
   background-color: var(--accent-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*clients section*/
@@ -457,9 +475,15 @@ ul {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
-
-
+.blocks {
+  align-items: baseline;
+}
+.foot-rigth-block {
+  margin-left: 70px;
+}
 .foot-title {
+  padding-left: 0;
+  display: inline-block;
   margin-bottom: 20px;
   text-align: center;
   font-weight: 700;
@@ -483,15 +507,9 @@ ul {
   background-color: rgba(255, 255, 255, 10%);
   border-radius: 50%;
 }
-.social-item-foot {
-}
 .social-link-foot:hover,
 .social-link-foot:focus {
   background-color: #2196f3;
-}
-.social-link-foot:hover .social-icon-foot,
-.social-link-foot:focus .social-icon-foot {
-  fill: #ffffff;
 }
 .social-icon-foot {
   fill: #ffffff;
