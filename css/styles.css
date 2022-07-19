@@ -108,16 +108,14 @@ ul {
   color: var(--accent-text-color);
 }
 .contacts {
-  align-items: center;
-  justify-content: center;
   margin-left: auto;
   gap: 50px;
 }
 .contacts-item {
   display: flex;
-  justify-content: center;
 }
 .contacts-nav {
+   align-items: center;
   display: flex;
   font-weight: 500;
   font-size: 14px;
