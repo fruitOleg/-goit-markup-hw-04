@@ -219,7 +219,7 @@ ul {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  background: #F5F4FA;
+  background: #f5f4fa;
   border-radius: 4px;
 }
 .benefit-cards {
@@ -312,23 +312,34 @@ ul {
 
 /*clients section*/
 .clients-list {
+  align-items: center;
+  justify-content: center;
   gap: 30px;
 }
-.clients-icon {
+
+.clients-link {
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 
   background-color: #ffffff;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+}
+.clients-icon {
   fill: #afb1b8;
 }
-.clients-icon:hover,
-.clients-icon:focus {
+.clients-link:hover,
+.clients-link:focus{
   border: 1px solid #2196f3;
-  fill: #2196f3;
 }
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon{
+   fill: #2196f3;
+}
+
 
 /*portfolio*/
 
