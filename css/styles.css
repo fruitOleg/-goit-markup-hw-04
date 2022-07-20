@@ -115,7 +115,7 @@ ul {
   display: flex;
 }
 .contacts-nav {
-   align-items: center;
+  align-items: center;
   display: flex;
   font-weight: 500;
   font-size: 14px;
@@ -207,11 +207,23 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.list-benefits {
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.benefit-link {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background: #F5F4FA;
+  border-radius: 4px;
+}
 .benefit-cards {
   width: 270px;
-}
-.list-benefits {
-  gap: 30px;
 }
 .benefit-title {
   font-weight: 700;
@@ -232,14 +244,6 @@ ul {
 .list-work {
   list-style: none;
   gap: 30px;
-}
-.benefits-icon {
-  width: 270px;
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  padding: 25px 100px;
-  margin-bottom: 30px;
 }
 /*hero section*/
 
@@ -285,7 +289,6 @@ ul {
   justify-content: center;
   gap: 10px;
 }
-
 .social-link {
   align-items: center;
   justify-content: center;
@@ -305,6 +308,26 @@ ul {
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
   fill: #ffffff;
+}
+
+/*clients section*/
+.clients-list {
+  gap: 30px;
+}
+.clients-icon {
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+
+  background-color: #ffffff;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+}
+.clients-icon:hover,
+.clients-icon:focus {
+  border: 1px solid #2196f3;
+  fill: #2196f3;
 }
 
 /*portfolio*/
@@ -403,27 +426,6 @@ ul {
   background-color: var(--accent-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-/*clients section*/
-.clients-list {
-  margin-top: 30px;
-  gap: 30px;
-}
-.clients-icon {
-  width: 170px;
-  height: 92px;
-  padding: 16px 32px;
-
-  background-color: #ffffff;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  fill: #afb1b8;
-}
-.clients-icon:hover,
-.clients-icon:focus {
-  border: 1px solid #2196f3;
-  fill: #2196f3;
 }
 
 /*footer*/
